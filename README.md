@@ -6,10 +6,10 @@ This is a project from [here](https://hyperskill.org/projects/33?track=1)
 
 # Running
 This will allow user to interact with a coffee shop the way you would in real life.
-* Buy
-* Fill
-* Take
-* Remaining
+* [Buy](https://github.com/abspen1/coffee-shop/tree/main#buy)
+* [Fill](https://github.com/abspen1/coffee-shop/tree/main#fill)
+* [Take](https://github.com/abspen1/coffee-shop/tree/main#take)
+* [Remaining](https://github.com/abspen1/coffee-shop/tree/main#buy)
 
 ## Buy
 Allows user to buy either an espresso, latte, or a cappuccino. Each has their own specific needs as far as ingredients and price.
