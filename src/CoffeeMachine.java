@@ -1,12 +1,13 @@
 import java.util.Scanner;
 
 /**
- * 
- */
-
-/**
  * @author Austin Spencer
- *
+ * @version 1.0
+ * 
+ * This program is 100% my own code
+ * Using the idea from https://hyperskill.org/curriculum (JetBrains)
+ * 
+ * Using this as a refresher to Java and OOP
  */
 public class CoffeeMachine {
 
@@ -16,8 +17,9 @@ public class CoffeeMachine {
 	private int coffee;
 	private int cups;
 	private int money;
+	
 	/**
-	 * 
+	 * General constructor with amounts initialized how JetBrains said to
 	 */
 	public CoffeeMachine() {
 		this.water = 400;
@@ -26,8 +28,29 @@ public class CoffeeMachine {
 		this.cups = 9;
 		this.money = 550;
 	}
+	
+	/**
+	 * Constructor with parameters for specific starting point
+	 * 
+	 * @param water amount of water (int)
+	 * @param milk amount of milk (int)
+	 * @param coffee amount of coffee beans (int)
+	 * @param cups amount of coffee cups (cups)
+	 * @param money amount of money (int)
+	 */
+	public CoffeeMachine(int water, int milk, int coffee, int cups, int money) {
+		this.water = water;
+		this.milk = milk;
+		this.coffee = coffee;
+		this.cups = cups;
+		this.money = money;
+	}
 
 	/**
+	 * Main function
+	 * 
+	 * If I cared enough I would create a driver class and move this main function into there
+	 * 
 	 * @param args
 	 */
 	public static void main(String[] args) {
@@ -47,7 +70,7 @@ public class CoffeeMachine {
 	        		transaction.purchase = Integer.parseInt(scanner.next());
 	        	}
 	        	catch (NumberFormatException e) {
-	                // It's OK to ignore "e" here because returning a default value is the documented behaviour on invalid input.
+	                // This allows someone to type 'back' or anything other than 1, 2, or 3 and not produce an error
 	            }
 	        	
 	        	if (transaction.purchase == 1) {
@@ -133,53 +156,95 @@ public class CoffeeMachine {
 	        	transaction.remaining(transaction);
 	        }
 		} while(!action.equals("exit"));
-                
-        
-
-         
+		
         scanner.close();
     }
 	
+	/**
+	 *
+	 * @param water water to set (in mL)
+	 */
 	public void setWater(int water) {
 		this.water = water;
 	}
 	
+	/**
+	 * 
+	 * @return current amount of water (in mL)
+	 */
 	public int getWater() {
 		return this.water;
 	}
 	
+	/**
+	 * 
+	 * @param milk milk to set (in mL)
+	 */
 	public void setMilk(int milk) {
 		this.milk = milk;
 	}
 	
+	/**
+	 * 
+	 * @return current amount of milk (in mL)
+	 */
 	public int getMilk() {
 		return this.milk;
 	}
 	
+	/**
+	 * 
+	 * @param coffee coffee beans to set (in g) 
+	 */
 	public void setCoffee(int coffee) {
 		this.coffee = coffee;
 	}
 	
+	/**
+	 * 
+	 * @return current amount of coffee beans (in g)
+	 */
 	public int getCoffee() {
 		return this.coffee;
 	}
 	
+	/**
+	 * 
+	 * @param cups cups to set
+	 */
 	public void setCups(int cups) {
 		this.cups = cups;
 	}
 	
+	/**
+	 * 
+	 * @return current amount of cups
+	 */
 	public int getCups() {
 		return this.cups;
 	}
 	
+	/**
+	 * 
+	 * @param money money to set (in $)
+	 */
 	public void setMoney(int money) {
 		this.money = money;
 	}
 	
+	/**
+	 * 
+	 * @return current amount of money (in $)
+	 */
 	public int getMoney() {
 		return this.money;
 	}
 	
+	/**
+	 * Prints what is remaining in the coffee shop
+	 * 
+	 * @param transaction current object of CoffeeMachine
+	 */
 	public void remaining(CoffeeMachine transaction) {
 		System.out.println("\nThe coffee machine has: ");
         String out = transaction.getWater() + " of water";
