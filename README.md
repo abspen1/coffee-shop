@@ -12,7 +12,7 @@ This will allow user to interact with a coffee shop the way you would in real li
 This is a project from [here](https://hyperskill.org/projects/33?track=1). I chose to use Eclipse to build and run this project. Will work with whichever compiler of your choice. The main purpose of this project was to refresh my Java and OOP skills. I enjoyed creating this project for those reasons.
 
 # Functions
-List of each of the functions available to the user
+List of each of the functions available to the user. Each with examples of with output/input. The symbol > represents the user input. Note that it's not part of the output.
 
 ## Buy
 Allows user to buy either an espresso, latte, or a cappuccino. Each has their own specific needs as far as ingredients and price.
