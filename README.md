@@ -16,7 +16,7 @@ List of each of the functions available to the user. Each with examples of with 
 
 ## Buy
 Allows user to buy either an espresso, latte, or a cappuccino. Each has their own specific needs as far as ingredients and price.
-```bash
+```
 Write action (buy, fill, take, remaining, exit): 
 > buy
 
@@ -34,7 +34,7 @@ Sorry, not enough water!
 
 ## Fill
 Allows user to fill each ingredient with whatever amount they desire.
-```bash
+```
 Write action (buy, fill, take, remaining, exit): 
 > fill
 
@@ -50,7 +50,7 @@ Write how many disposable cups of coffee do you want to add:
 
 ## Take
 Allows user to take all of the money out of the register
-```bash
+```
 Write action (buy, fill, take, remaining, exit): 
 > take
 
@@ -59,7 +59,7 @@ I gave you $564
 
 ## Remaining
 Displays what how much of each ingredient and the amount of money available.
-```bash
+```
 Write action (buy, fill, take, remaining, exit): 
 > remaining
 
