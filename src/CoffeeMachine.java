@@ -70,7 +70,8 @@ public class CoffeeMachine {
 	        		transaction.purchase = Integer.parseInt(scanner.next());
 	        	}
 	        	catch (NumberFormatException e) {
-	                // This allows someone to type 'back' or anything other than 1, 2, or 3 and not produce an error
+					// This allows someone to type 'back' or anything other than 1, 2, or 3 and not produce an error
+					transaction.purchase = 0;
 	            }
 	        	
 	        	if (transaction.purchase == 1) {
