@@ -1,5 +1,5 @@
 # coffee-shop
-Coffee shop built in Java from JetBrains learning
+Coffee shop built in Java from JetBrains learning. Check out the demo of the program running [here](https://austinspencer.works/projects/java/demos/coffee/)
 
 # Running
 This will allow user to interact with a coffee shop the way you would in real life.
